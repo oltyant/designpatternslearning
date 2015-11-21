@@ -1,22 +1,11 @@
-import sbt.Keys._
-
-name := "Scala Learning"
+name := "Design Patterns Learning"
 
 version := "1.0"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.4"
 
-organization := "com.scalalearning"
+organization := "com.oltyant"
 				    
-resolvers ++= Seq(
-					          "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
-						          "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
-							        )
-
 libraryDependencies ++= Seq(
-								              "org.specs2" %% "specs2" % "2.4.17" % "test",
-									              "org.scalatest" %% "scalatest" % "2.2.4" % "test",
-										              "org.scalacheck" %% "scalacheck" % "latest.release" % Test
-											            )
-												          
-													  resolvers += Classpaths.sbtPluginReleases
+                    "org.scalatest" % "scalatest_2.11" % "3.0.0-M11" % Test
+)
